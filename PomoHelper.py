@@ -17,7 +17,7 @@ while minutes < 20:
     data2 = datetime.datetime.now()
     diff = data2 - data1
     days, seconds = diff.days, diff.seconds
-    hours = days * 24 + seconds // 3600cd C:/
+    hours = days * 24 + seconds // 3600
     minutes = (seconds % 3600) // 60
     seconds = seconds % 60
 
