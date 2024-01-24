@@ -1,10 +1,8 @@
 # PomoHelper
-Ajudante de foco automatizado para prática da técnica pomodoro
+Automated focus assistant for practicing the Pomodoro technique
 
-Basicamente é monitorado o arquivo Json de sessão do firefox (localizado na pasta %AppData%) onde é possível identificar a aba atual com sua respectiva URL
+Essentially, the Firefox session's JSON file (located in the %AppData% folder) is monitored to identify the current tab along with its respective URL.
 
-Uma vez com essa informação é feita a comparação da Url com as dos Sites Youtube e Facebook, onde, em caso positivo é enviado o conjunto de comandos do teclado
-(Ctrl + F4) na qual fecha a Aba atual do firefox
+Once this information is obtained, a comparison is made between the URL and those of YouTube and Facebook. In the case of a positive match, a set of keyboard commands (Ctrl + F4) is sent, closing the current tab in Firefox.
 
-Todo o processo de extração dos dados atuais e suas comparações estão dentro de um laço de repetição onde só é terminado ao final de 20 minutos, 
-fazendo a comparação da hora de inicio da executação do código com a hora atual em cada loop do laço principal;
+The entire process of extracting current data and performing comparisons is enclosed within a loop that only terminates after 20 minutes. This termination is based on comparing the start time of the code execution with the current time in each iteration of the main loop.
